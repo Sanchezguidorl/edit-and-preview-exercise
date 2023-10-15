@@ -3,7 +3,7 @@ import { faDownLeftAndUpRightToCenter } from "@fortawesome/free-solid-svg-icons/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface PropsEditorInterface {
-  handleChange: ( event: React.ChangeEvent<HTMLInputElement>) => void | undefined;
+  handleChange: ( event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   expanded: () => void;
   isExpanded: boolean;
   text: string;
@@ -40,7 +40,7 @@ function Editor({
         )}
       </h2>
       <label htmlFor="editor" className="display-none">Editor</label>
-      <textarea id="editor" defaultValue={text} onChange={handleChange}></textarea>
+      <textarea id="editor" defaultValue={text} onChange={(e)=>handleChange(e)}></textarea>
     </>
   );
 }

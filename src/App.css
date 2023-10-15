@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import './styles/Editor.css';
+@import './styles/Preview.css';
+@import "@fontsource/russo-one"; 
+@import "@fontsource/russo-one/400.css"; 
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#App {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #55a0a0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.border {
+    border: 2px solid #333333;
+    border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header-component {
+    display: flex;
+    justify-content: space-between;
+    background-color: #498080;
+    padding: 10px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: "Russo One";
+    font-size: 1rem;
 }
 
-.card {
-  padding: 2em;
+.header-component svg:hover {
+    color: #00ffc8;
+    cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+
+.display-none {
+    display: none;
+}
+
+.grow-height {
+    height: 95vh;
+}
+.grow-height textarea{
+    height: 93vh !important;
 }

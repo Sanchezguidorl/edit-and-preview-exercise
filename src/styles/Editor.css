@@ -1,0 +1,21 @@
+#EditorContainer{
+    box-shadow: 0px 0px 12px #0000009a;
+    background-color: #73cccc;
+    margin: 10px auto;
+    min-height: 205px;
+    overflow: hidden;
+    max-width: 550px;
+}
+
+#EditorContainer textarea {
+    min-height: 200px;
+    margin-bottom: -2px;
+    font-size: 0.875rem;
+    padding: 5px;
+    background-color: #73cccc;
+    max-width: calc(100% - 13px);
+    min-width: calc(100% - 13px);
+    outline: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

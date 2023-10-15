@@ -39,6 +39,7 @@ function Editor({
           />
         )}
       </h2>
+      <label htmlFor="editor" className="display-none">Editor</label>
       <textarea id="editor" defaultValue={text} onChange={handleChange}></textarea>
     </>
   );

@@ -53,7 +53,7 @@ function App() {
   const [areExpanded, setAreExpanded] = useState<boolean>(false);
   const [whoAreExpanded, setWhoAreExpanded] = useState<number>(0);
 
-  const handleChageTexto = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChageTexto = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const newData = event.target.value;
     setText(newData);
   };
